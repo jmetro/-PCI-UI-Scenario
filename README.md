@@ -1,3 +1,32 @@
+Task 1
+- I'm expecting it to be scalable and there will be other type of tables or pages that will have different titles. 
+- this is the reason I put a side-effect to change the title instead of changing it directly in index.html
+- Added title pros as well
+
+task 2
+- There are no specified type of fields. I assume the types based on what I can see in the table
+- blocker: discovery date filter seems to be not working properly. skipping this to work on task 3
+- Not sure if Y/N/NA should be filtered by text. No concrete requirement to filter Potentially Hazardous column. But there is a filter in docs for these kind of values
+
+task 3
+- was commited under task 2 branch
+- fixed filtering of date column
+- Added date formatter
+- I used MM/dd/yyyy format to match the default format of the filter
+
+task 4
+- No comments for this task
+
+task 5
+- Had to take some time to read the documentation for copy and pasting using selection or context menu
+- Blocker - these features are only for enterprise version of the grid. I was not able to find copy and paste functionality in community version
+
+task 6
+- accessed gridApi and columnApi via onGridReady since I don't have enterprise access to use agGrid instance
+
+task 7
+- did not add ts interface or types in react-app-env.d.ts since all of the ts are provided by the library or file specific ts
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -64,27 +93,3 @@ Within this repo is a demo UI that our team needs to make some changes to before
 7. Lastly, this grid is going to go to production soon, and other developers will begin doing work on this project. While creating this demo, considerations were not made to keep the code clean and organized. Please organize this codebase so that it is easier to find and make changes to components, as well as finding any interfaces, types, or helper functions.
 
 After completing this project, please push any changes you made to a publicly accessible GitLab or GitHub repository and include that link in an email to your contact at PCI. Thank you!
-
-
-Task 1
-- I'm expecting it to be scalable and there will be other type of tables or pages that will have different titles. 
-- this is the reason I put a side-effect to change the title instead of changing it directly in index.html
-- Added title pros as well
-
-task 2
-- There are no specified type of fields. I assume the types based on what I can see in the table
-- blocker: discovery date filter seems to be not working properly. skipping this to work on task 3
-- Not sure if Y/N/NA should be filtered by text. No concrete requirement to filter Potentially Hazardous column. But there is a filter in docs for these kind of values
-
-task 3
-- was commited under task 2 branch
-- fixed filtering of date column
-- Added date formatter
-- I used MM/dd/yyyy format to match the default format of the filter
-
-task 4
-- No comments for this task
-
-task 5
-- Had to take some time to read the documentation for copy and pasting using selection or context menu
-- Blocker - these features are only for enterprise version of the grid. I was not able to find copy and paste functionality in community version

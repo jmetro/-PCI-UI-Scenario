@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import numberSort from "./utils/grid/numberSort";
 import dateFormatter from "./utils/grid/dateFormatter";
 import dateFilter from "./utils/grid/dateFilter";
+import yesNoFormatter from './utils/grid/yesNoFormatter';
 // Assumptions: There are no specified type of fields. I assume the types based on what I can see in the table
 // blocker: discovery date filter seems to be not working properly. skipping this to work on task 3
 // Task 3: fixed filtering of date column
@@ -20,7 +21,7 @@ const columnDefs: ColDef[] = [
   { field: "q_au_2", headerName: "Q (au)", sortable: true, comparator: numberSort, filter: 'agNumberColumnFilter' },
   { field: "period_yr", headerName: "Period (yr)", sortable: true, comparator: numberSort, filter: 'agNumberColumnFilter' },
   { field: "i_deg", headerName: "Inclination (deg)", sortable: true, comparator: numberSort, filter: 'agNumberColumnFilter' },
-  { field: "pha", headerName: "Potentially Hazardous", sortable: true, filter: true },
+  { field: "pha", headerName: "Potentially Hazardous", sortable: true, filter: true, valueFormatter: yesNoFormatter },
   { field: "orbit_class", headerName: "Orbit Class", enableRowGroup: true, sortable: true, filter: true },
 ];
 

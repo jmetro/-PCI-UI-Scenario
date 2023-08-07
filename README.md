@@ -77,6 +77,10 @@ task 2
 - Not sure if Y/N/NA should be filtered by text. No concrete requirement to filter Potentially Hazardous column. But there is a filter in docs for these kind of values
 
 task 3
+- was commited under task 2 branch
 - fixed filtering of date column
 - Added date formatter
 - I used MM/dd/yyyy format to match the default format of the filter
+
+task 4
+- No comments for this task

@@ -5,12 +5,15 @@ import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
 import { useEffect } from "react";
 import numberSort from "./utils/grid/numberSort";
-
+import dateFormatter from "./utils/grid/dateFormatter";
+import dateFilter from "./utils/grid/dateFilter";
 // Assumptions: There are no specified type of fields. I assume the types based on what I can see in the table
 // blocker: discovery date filter seems to be not working properly. skipping this to work on task 3
+// Task 3: fixed filtering of date column
+// Added value formatter for date
 const columnDefs: ColDef[] = [
   { field: "designation", headerName: "Designation", sortable: true, filter: true, menuTabs: ['filterMenuTab']  },
-  { field: "discovery_date", headerName: "Discovery Date", sortable: true, filter: 'agDateColumnFilter' },
+  { field: "discovery_date", headerName: "Discovery Date", sortable: true, filter: 'agDateColumnFilter', valueFormatter: dateFormatter, filterParams: { comparator: dateFilter } },
   { field: "h_mag", headerName: "H (mag)", sortable: true, comparator: numberSort, filter: 'agNumberColumnFilter' },
   { field: "moid_au", headerName: "MOID (au)", sortable: true, comparator: numberSort, filter: 'agNumberColumnFilter' },
   { field: "q_au_1", headerName: "q (au)", sortable: true, comparator: numberSort, filter: 'agNumberColumnFilter' },

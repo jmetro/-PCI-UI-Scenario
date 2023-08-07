@@ -66,12 +66,17 @@ Within this repo is a demo UI that our team needs to make some changes to before
 After completing this project, please push any changes you made to a publicly accessible GitLab or GitHub repository and include that link in an email to your contact at PCI. Thank you!
 
 
-Task 1 Assumptions
+Task 1
 - I'm expecting it to be scalable and there will be other type of tables or pages that will have different titles. 
 - this is the reason I put a side-effect to change the title instead of changing it directly in index.html
 - Added title pros as well
 
-task 2 Assumptions
+task 2
 - There are no specified type of fields. I assume the types based on what I can see in the table
 - blocker: discovery date filter seems to be not working properly. skipping this to work on task 3
 - Not sure if Y/N/NA should be filtered by text. No concrete requirement to filter Potentially Hazardous column. But there is a filter in docs for these kind of values
+
+task 3
+- fixed filtering of date column
+- Added date formatter
+- I used MM/dd/yyyy format to match the default format of the filter

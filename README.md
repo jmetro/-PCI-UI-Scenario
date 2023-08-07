@@ -84,3 +84,7 @@ task 3
 
 task 4
 - No comments for this task
+
+task 5
+- Had to take some time to read the documentation for copy and pasting using selection or context menu
+- Blocker - these features are only for enterprise version of the grid. I was not able to find copy and paste functionality in community version
